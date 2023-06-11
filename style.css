@@ -1,0 +1,290 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #1da1f2;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+
+div.head {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+/* Containers */
+
+div.title {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    margin: 0;
+}
+
+.side-container {
+    width: 15%;
+    flex-direction: column;
+    background-color: var(--main-color);
+    margin: 0;
+}
+
+.shrink {
+    width: 5%;
+}
+
+.shrink .side-title {
+    display: none;
+}
+
+.shrink .icon {
+    transform: scale(1.4);
+}
+
+.shrink button {
+    font-size: 0px;
+}
+
+.shrink .main-img {
+    transform: scale(3);
+}
+
+.side-container a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+div.main-container {
+    flex-direction: column;
+    width: 85%;
+}
+
+/* header */
+header {
+    background-color: white;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.search {
+    background-color: gainsboro;
+    border-radius: 15px;
+    border: 0;
+    width: 60%;
+    padding: 7px;
+    margin-right: 120px;
+}
+
+.search:focus {
+    outline-color: tomato;
+}
+
+.second-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 20px 35px;
+}
+
+.links a {
+    background-color: var(--main-color);
+    margin-right: 40px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+/* Main */
+
+.main-main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.card-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+}
+
+.card-main a {
+    text-decoration: none;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    border-left: solid 12px tomato;
+}
+
+.card p {
+    padding-bottom: 20px;
+}
+
+.card a {
+    padding: 10px;
+}
+
+div.side-bar {
+    display: grid;
+    gap: 1em;
+    width: 100%;
+}
+
+div.announcments,
+.trending {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+/* links */
+
+.side-link {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 10px 0 10px 25px;
+    font-size: 1em;
+    transition: transform 0.7 ease;
+}
+
+
+.side-link :hover {
+    transform: scale(1.1);
+}
+
+.side-container :nth-child(8) {
+    padding-top: 50px;
+}
+
+/* Fonts */
+
+.kit {
+    display: inline-block;
+    padding: 20px;
+}
+
+.alex {
+    display: inline-block;
+    padding: 20px 50px 20px 0px;
+    margin-right: 135px;
+}
+
+.main-title {
+    cursor: pointer;
+    padding: 20px 20px 20px 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    background-color: var(--main-color);
+    border: 0;
+}
+
+
+
+.para {
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.pra {
+    font-size: 1.4em;
+}
+
+.title-bar {
+    font-weight: bold;
+    padding: 5px 0 5px 0;
+}
+
+.information {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid antiquewhite;
+}
+
+.announcments :last-child {
+    border-bottom: none;
+}
+
+.user-name {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.user-name span {
+    font-weight: normal;
+}
+
+.trend {
+    padding: 7px;
+}
+
+/* Images */
+
+.profil-pic {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+}
+
+
+.search-img {
+    padding: 15px 15px 20px 35px;
+}
+
+.second-head img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.title img {
+    width: 30%;
+}
+
+/* icons */
+
+.bell {
+    padding-right: 50px;
+}
